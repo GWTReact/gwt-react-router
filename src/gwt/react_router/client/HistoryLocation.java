@@ -1,11 +1,11 @@
 package gwt.react_router.client;
 
-import gwt.react.client.utils.ObjLiteral;
+import gwt.interop.utils.client.plainobjects.JsPlainObj;
 import jsinterop.annotations.JsMethod;
 import jsinterop.annotations.JsType;
 
 @JsType(isNative = true)
-public class HistoryLocation extends ObjLiteral {
+public class HistoryLocation extends JsPlainObj {
 
     /**
      * The pathname portion of the URL, without query string
@@ -20,7 +20,7 @@ public class HistoryLocation extends ObjLiteral {
     /**
      * An object of data tied to this location
      */
-    ObjLiteral state;
+    JsPlainObj state;
 
     /**
      * One of PUSH, REPLACE, or POP

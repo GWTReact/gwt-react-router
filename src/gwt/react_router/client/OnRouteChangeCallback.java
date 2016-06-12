@@ -1,9 +1,9 @@
 package gwt.react_router.client;
 
-import gwt.react.client.utils.JSFunc;
+import gwt.interop.utils.shared.functional.JsProcedure;
 import jsinterop.annotations.JsFunction;
 
 @JsFunction
 public interface OnRouteChangeCallback {
-    void onChange(String prevState, String nextState, JSFunc replaceFn);
+    void onChange(String prevState, String nextState, JsProcedure replaceFn);
 }

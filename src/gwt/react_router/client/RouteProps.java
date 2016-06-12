@@ -1,8 +1,8 @@
 package gwt.react_router.client;
 
+import gwt.interop.utils.shared.collections.StringMap;
 import gwt.react.client.components.ReactClass;
 import gwt.react.client.proptypes.BaseProps;
-import gwt.react.shared.utils.StringMap;
 import jsinterop.annotations.JsOverlay;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsProperty;
