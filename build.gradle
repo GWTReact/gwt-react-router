@@ -6,7 +6,7 @@ apply plugin: 'signing'
 
 group = 'com.github.gwtreact'
 archivesBaseName = 'gwt-react-router'
-version = "0.1.1"
+version = "0.2.0"
 
 buildscript {
     repositories {
@@ -54,7 +54,8 @@ gwt {
     maxHeapSize = "4096M";
 
     dependencies {
-        gwt group: 'com.github.gwtreact', name: 'gwt-react', version: '0.1.0'
+        gwt group: 'com.github.gwtreact', name: 'gwt-interop-utils', version: '0.1.+'
+        gwt group: 'com.github.gwtreact', name: 'gwt-react', version: '0.2.+'
     }
 }
 

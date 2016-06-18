@@ -19,7 +19,7 @@ You can download the latest release .jar from Maven Central using the following 
 
 * **groupId**&nbsp;&nbsp;&nbsp; com.github.gwtreact
 * **artifactId**&nbsp;&nbsp;gwt-react-router
-* **version**&nbsp;&nbsp;&nbsp;  0.1.1
+* **version**&nbsp;&nbsp;&nbsp;  0.2.0
 
 ##Roadmap
 
@@ -30,5 +30,6 @@ You can download the latest release .jar from Maven Central using the following 
 
 | Date | Version | Description |
 | :---      | :---  | :---  |
-| 5/13/2016 | 0.1.0 | Initial preview release to Maven Central   |
+| 6/18/2016 | 0.2.0 | Update to use gwt-interop-utils library   |
 | 5/25/2016 | 0.1.1 | Fix incorrect inherits   |
+| 5/13/2016 | 0.1.0 | Initial preview release to Maven Central   |
