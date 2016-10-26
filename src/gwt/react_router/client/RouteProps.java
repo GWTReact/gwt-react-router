@@ -76,4 +76,10 @@ public class RouteProps extends BaseProps {
         setOnLeave(cb);
         return this;
     }
+
+    @JsOverlay
+    public final RouteProps key(String key) {
+        this.key = key;
+        return this;
+    }
 }
