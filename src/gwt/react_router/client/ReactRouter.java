@@ -1,6 +1,6 @@
 package gwt.react_router.client;
 
-import gwt.react.client.components.ReactClass;
+import gwt.react.client.components.ComponentConstructorFn;
 import jsinterop.annotations.JsPackage;
 import jsinterop.annotations.JsType;
 
@@ -10,9 +10,9 @@ public class ReactRouter {
     public static HistoryMechanism browserHistory;
     public static HistoryMechanism hashHistory;
 
-    public static ReactClass<RouterProps> Router;
-    public static ReactClass<RouteProps> Route;
-    public static ReactClass<RouteProps> IndexRoute;
-    public static ReactClass<RedirectProps> Redirect;
-    public static ReactClass<RedirectProps> IndexRedirect;
+    public static ComponentConstructorFn<RouterProps> Router;
+    public static ComponentConstructorFn<RouteProps> Route;
+    public static ComponentConstructorFn<RouteProps> IndexRoute;
+    public static ComponentConstructorFn<RedirectProps> Redirect;
+    public static ComponentConstructorFn<RedirectProps> IndexRedirect;
 }

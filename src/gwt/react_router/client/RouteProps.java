@@ -1,7 +1,7 @@
 package gwt.react_router.client;
 
 import gwt.interop.utils.shared.collections.StringMap;
-import gwt.react.client.components.ReactClass;
+import gwt.react.client.components.ComponentConstructorFn;
 import gwt.react.client.proptypes.BaseProps;
 import jsinterop.annotations.JsOverlay;
 import jsinterop.annotations.JsPackage;
@@ -15,10 +15,10 @@ public class RouteProps extends BaseProps {
     native void setPath(String p);
 
     @JsProperty
-    native void setComponent(ReactClass c);
+    native <P extends BaseProps> void setComponent(ComponentConstructorFn<P> c);
 
     @JsProperty
-    native void setComponents(StringMap<ReactClass> c);
+    native <P extends BaseProps> void setComponents(StringMap<ComponentConstructorFn<P>> c);
 
     @JsProperty
     native void setOnChange(Object cb);
@@ -36,13 +36,13 @@ public class RouteProps extends BaseProps {
     }
 
     @JsOverlay
-    public final RouteProps component(ReactClass c) {
+    public final <P extends BaseProps> RouteProps component(ComponentConstructorFn<P> c) {
         setComponent(c);
         return this;
     }
 
     @JsOverlay
-    public final RouteProps components(StringMap<ReactClass> c) {
+    public final <P extends BaseProps> RouteProps components(StringMap<ComponentConstructorFn<P>> c) {
         setComponents(c);
         return this;
     }
